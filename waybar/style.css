@@ -1,0 +1,141 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", "Font Awesome 6 Free", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #000000;
+    color: #e6e6e6;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+tooltip {
+    background: #111111;
+    color: #e6e6e6;
+    border: 1px solid #222222;
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: #e6e6e6;
+}
+
+#window,
+#clock {
+    padding: 0 10px;
+    margin: 4px 0;
+}
+
+#workspaces {
+    padding: 0;
+    margin: 0;
+}
+
+.modules-left {
+    margin-left: 8px;
+}
+
+.modules-right {
+    margin-right: 8px;
+}
+
+.modules-center {
+    margin: 0 8px;
+}
+
+#workspaces button {
+    padding: 0 3px;
+    margin: 0;
+    color: #555555;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+    color: #ffffff;
+    background: transparent;
+}
+
+#workspaces button.urgent {
+    color: #ff6b6b;
+    background: transparent;
+}
+
+#workspaces button:hover {
+    color: #ffffff;
+    background: transparent;
+}
+
+#window {
+    color: #cfcfcf;
+    padding-right: 6px;
+}
+
+#window.empty {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+#clock {
+    color: #ffffff;
+    font-weight: 600;
+    padding-left: 6px;
+}
+
+#pulseaudio,
+#battery,
+#power-profiles-daemon,
+#tray {
+    color: #e6e6e6;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    min-width: 30px;
+}
+
+#pulseaudio.muted {
+    color: #888888;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #8ff0a4;
+}
+
+#battery.warning:not(.charging) {
+    color: #f9e2af;
+}
+
+#battery.critical:not(.charging) {
+    color: #ff6b6b;
+}
+
+#power-profiles-daemon.performance {
+    color: #ffb4ab;
+}
+
+#power-profiles-daemon.balanced {
+    color: #89b4fa;
+}
+
+#power-profiles-daemon.power-saver {
+    color: #a6e3a1;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
